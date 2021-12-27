@@ -35,19 +35,21 @@ public class Temperatyre {
 
             String responseJson = response.body().string();
 
-
-            JsonNode tempSity = objectMapper
-                    .readTree(responseJson)
-                    .at("/0/Temperatyre");
-            tempFive = tempSity.asText();
+            return responseJson;
 
 
-
-
+//            JsonNode tempSity = objectMapper
+//                    .readTree(responseJson)
+//                    .at("/0/Temperatyre");
+//            tempFive = tempSity.asText();
 
 
 
-            return tempFive;
+
+
+
+
+//            return tempFive;
 
 
 
